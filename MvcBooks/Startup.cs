@@ -27,7 +27,7 @@ namespace MvcBooks
         {
             services.AddControllersWithViews();
             services.AddDbContext<MvcBookContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("MvcBooksContext")));
 
             services.AddDbContext<MvcBooksContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("MvcBooksContext")));
